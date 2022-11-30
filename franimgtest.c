@@ -62,7 +62,7 @@ int	main(void)
 		return (MLX_ERROR);
 	}
     result = mlx_xpm_file_to_image(data.mlx_ptr, "/Home/Images/Cat01.xpm", &i, &j);
-    mlx_put_image_to_window(data.mlx_ptr, data.win_ptr, result, 100, 150);
+    mlx_put_image_to_window(data.mlx_ptr, data.win_ptr, result, 10, 10);
     mlx_hook(data.win_ptr, KeyPress, KeyPressMask, &handle_keypress, &data);
 	mlx_loop(data.mlx_ptr);
 	/* we will exit the loop if there's no window left, and execute this code */
